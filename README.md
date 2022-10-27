@@ -30,4 +30,4 @@ https://www.kaggle.com/datasets/khusheekapoor/vehicle-insurance-fraud-detection
 
 ### Our Communication Protocols
 
-tbd
+We will communicate through Slack messages and on twice-weekly zoom meetings.
