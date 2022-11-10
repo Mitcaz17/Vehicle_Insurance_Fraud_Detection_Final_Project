@@ -32,19 +32,19 @@ https://www.kaggle.com/datasets/khusheekapoor/vehicle-insurance-fraud-detection
 
 - We summarized the dataset using describe(), and identified the column data types using the dtypes attribute.
 
-- Some unecessary columns were dropped, inluding Week of Month, Deductible, AddressChange-Claim, and RepNumber.
+- Some unnecessary columns were dropped, including Week of Month, Deductible, AddressChange-Claim, and RepNumber.
 
 - We found missing values, and used KNNImputer to impute them.
 
-- The FraudFound columns is being used as our target variable, since this is the value we're attempting to predict.
+- The FraudFound column is being used as our target variable, since this is the value we're attempting to predict.
 
 ### Train_Test_Split
 
-Data is being split into training and testing sets by importing the train_test_split function from sklearn.model_selection, and passing in our target, our features, and a random_state value. These sets are being given the variable names: X_train, X_test, y_train, and y_test.
+Data is being split into training and testing sets by importing the train_test_split function from sklearn.model_selection, and passing in our target, our features, and a random_state value of 42. These sets are being given the variable names: X_train, X_test, y_train, and y_test.
 
 ### Explanation of Model Choice
 
-TBD
+Our dependent variable (FraudFound) is binary- either fraud was found, or it was not. Logistic Regression is the most efficient way of predicting this type of outcome.
 
 ### Our Communication Protocols
 
