@@ -26,26 +26,34 @@ This set features over 15,000 claim samples with 33 columns, including informati
 - Information about the claimants’ policies.
 - Whether fraud was detected
 
-https://www.kaggle.com/datasets/khusheekapoor/vehicle-insurance-fraud-detection
+[Link to Data](https://www.kaggle.com/datasets/khusheekapoor/vehicle-insurance-fraud-detection)
 
-### Pre-Processing the Data and Feature Selection
+## Prepping for the Machine Learning Model
 
 - We summarized the dataset using describe(), and identified the column data types using the dtypes attribute.
 
-- Some unnecessary columns were dropped, including Week of Month, Deductible, AddressChange-Claim, and RepNumber.
-
-- We found missing values, and used KNNImputer to impute them.
+- We handled missing values using two functions: One to find them, and one using KNNImputer to impute them.
 
 - The FraudFound column is being used as our target variable, since this is the value we're attempting to predict.
 
-### Train_Test_Split
+#### Feature Selection and Train_Test_Split
 
-Data is being split into training and testing sets by importing the train_test_split function from sklearn.model_selection, and passing in our target, our features, and a random_state value of 42. These sets are being given the variable names: X_train, X_test, y_train, and y_test.
+- Some unnecessary columns were dropped after exploratory analysis, including Week of Month, Deductible, AddressChange-Claim, and RepNumber.
 
-### Explanation of Model Choice
+- Using a For Loop, we dropped numerical features with a correlation of above 0.8, since those features would make the algotithm more complex without adding significant information.
 
-Our dependent variable (FraudFound) is binary- either fraud was found, or it was not. Logistic Regression is the most efficient way of predicting this type of outcome.
+- The FraudFound column is being used as our target variable, since this is the value we're attempting to predict.
 
-### Our Communication Protocols
+- Data was split into training and testing sets by importing the train_test_split function from sklearn.model_selection, and passing in our target (FraudFound), our features, and a random_state value of 42. These sets are being given the variable names: X_train, X_test, y_train, and y_test.
+
+## Our Machine Learning Model
+
+We have used Logistic Regression to predict fraud. Logistic Regression is not the best algorithm for identifying complex relationships, but our dependent variable (FraudFound) is binary- either fraud was found, or it was not. Logistic Regression is the most efficient algorithm for predicting this type of outcome.
+
+## Our Presentation
+
+[View our presentation here.](https://docs.google.com/presentation/d/1seDY3_Q9IZwSew6P-d4DhcwpT5R2ONvDfI21CGmWDHc/edit#slide=id.g14d5c27d989_3_0)
+
+## Our Communication Protocols
 
 We will communicate through Slack messages and on twice-weekly zoom meetings.
