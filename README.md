@@ -34,13 +34,11 @@ This set features over 15,000 claim samples with 33 columns, including informati
 
 - We handled missing values using two functions: One to find them, and one using KNNImputer to impute them.
 
-- The FraudFound column is being used as our target variable, since this is the value we're attempting to predict.
-
 #### Feature Selection and Train_Test_Split
 
 - Some unnecessary columns were dropped after exploratory analysis, including Week of Month, Deductible, AddressChange-Claim, and RepNumber.
 
-- Using a For Loop, we dropped numerical features with a correlation of above 0.8, since those features would make the algotithm more complex without adding significant information.
+- Using a For Loop, we dropped numerical features with a correlation of above 0.8, since those features would make the algorithm more complex without adding significant information.
 
 - The FraudFound column is being used as our target variable, since this is the value we're attempting to predict.
 
