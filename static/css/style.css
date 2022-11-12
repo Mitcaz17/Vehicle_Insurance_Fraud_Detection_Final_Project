@@ -61,6 +61,7 @@ footer a {
   width: 500px;
   max-width: 90%;
   margin: 0 auto;
+  background-color: #ebebeb;
 }
 
 .card {
@@ -94,7 +95,7 @@ footer a {
 
 .card-title {
   margin-top: 50px;
-  color: #328eff;
+  color: #000000;
   text-align: center;
 }
 
