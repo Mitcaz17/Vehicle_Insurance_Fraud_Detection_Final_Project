@@ -44,9 +44,11 @@ This set features over 15,000 claim samples with 33 columns, including informati
 
 - Data was split into training and testing sets by importing the train_test_split function from sklearn.model_selection, and passing in our target (FraudFound), our features, and a random_state value of 42. These sets are being given the variable names: X_train, X_test, y_train, and y_test.
 
-## Our Machine Learning Model
+## Our Machine Learning Models
 
-We have used Logistic Regression to predict fraud. Logistic Regression is not the best algorithm for identifying complex relationships, but our dependent variable (FraudFound) is binary- either fraud was found, or it was not. Logistic Regression is the most efficient algorithm for predicting this type of outcome.
+### Logistic Regression
+
+First, we used Logistic Regression to predict fraud. Logistic Regression is not the best algorithm for identifying complex relationships, but our dependent variable (FraudFound) is binary- either fraud was found, or it was not. Logistic Regression an efficient algorithm for predicting this type of outcome.
 
 Using Scikit-learn, we created a LogisticRegression() object, then used fit() to train the model using the X_train and y_train sets. Then, we used predict() to return predicted values for FraudFound in our training set (X_test). Using those predicted values and our y_test set, we generated an accuracy score using accuracy_score(). As shown below, our accuracy score is 0.94.
 
@@ -54,10 +56,10 @@ Using Scikit-learn, we created a LogisticRegression() object, then used fit() to
 
 ![acc_score](images/acc_score.jpg)
 
+### Random Forest
+
+We also used Scikit-learn to initialize a Random Forest Classifier model using BalancedRandomForestClassifierto complete the same steps for fitting, training, and predicting, we
+
 ## Our Presentation
 
 [View our presentation here.](https://docs.google.com/presentation/d/1seDY3_Q9IZwSew6P-d4DhcwpT5R2ONvDfI21CGmWDHc/edit#slide=id.g14d5c27d989_3_0)
-
-## Our Communication Protocols
-
-We will communicate through Slack messages and on twice-weekly zoom meetings.
