@@ -8,7 +8,13 @@ Contributors:
 
 ## Purpose
 
-Vehicle Insurance Fraud is an expensive, increasingly common, and avoidable problem for insurers. Sophisticated fraud detection processes will be essential to the entire Financial Services Industry moving forward. That’s why this project seeks to use machine learning techniques to understand and predict fraud.
+Vehicle Insurance Fraud occurs when someone attempts to deceive an insurance company while making a claim, in order to get a larger payout.
+
+This could mean anything from misrepresenting a detail to faking an accident. It is an expensive, increasingly common, and avoidable problem for insurers.
+
+Fraud is not exclusive to auto insurers. The entire financial services industry is experiencing rapidly rising levels of fraud, coming in many different forms. Insurers aren’t the only ones affected- fraudulent account activity can have devastating effects on consumers.
+
+That’s why using machine learning to replace time-intensive manual review with automated fraud detection processes will
 
 ## Questions to Answer
 
@@ -58,8 +64,16 @@ Using Scikit-learn, we created a LogisticRegression() object, then used fit() to
 
 ### Random Forest
 
-We also used Scikit-learn to initialize a Random Forest Classifier model using BalancedRandomForestClassifierto complete the same steps for fitting, training, and predicting, we
+We also used Scikit-learn to initialize a Random Forest Classifier model using BalancedRandomForestClassifier to complete the above steps for fitting, training, and predicting, using 100 estimators. This model yielded a lower balanced accuracy score of 0.632:
 
-## Our Presentation
+![rfc_acc_score](images/acc_score_rfc.jpg)
 
-[View our presentation here.](https://docs.google.com/presentation/d/1seDY3_Q9IZwSew6P-d4DhcwpT5R2ONvDfI21CGmWDHc/edit#slide=id.g14d5c27d989_3_0)
+Based on the below confusion matrix, the lower score is related to a high number of false positives. 1,123 legitimate claims were incorrectly flagged as fraud, compared to only 13 missed fraudulent claims.
+
+![confusion_matrix](images/confusion_matrix.jpg)
+
+## Presentation
+
+Click the link below to view our presentation on this topic.
+
+[Google Slides](https://docs.google.com/presentation/d/1seDY3_Q9IZwSew6P-d4DhcwpT5R2ONvDfI21CGmWDHc/edit#slide=id.g14d5c27d989_3_0)
