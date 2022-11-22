@@ -14,7 +14,7 @@ This could mean anything from misrepresenting a detail to faking an accident. It
 
 Fraud is not exclusive to auto insurers. The entire financial services industry is experiencing rapidly rising levels of fraud, coming in many different forms. Insurers aren’t the only ones affected- fraudulent account activity can have devastating effects on consumers.
 
-That’s why using machine learning to replace time-intensive manual review with automated fraud detection processes will
+That’s why using machine learning to replace time-intensive manual review with automated fraud detection processes will be essential moving forward.
 
 ## Questions to Answer
 
@@ -74,8 +74,8 @@ Based on the below confusion matrix, the lower score is related to a high number
 
 ## Presentation
 
-Click the link below to view our presentation on this topic.
+Click the links below to view our presentation and Tableau Story on this topic:
 
 [Google Slides](https://docs.google.com/presentation/d/1seDY3_Q9IZwSew6P-d4DhcwpT5R2ONvDfI21CGmWDHc/edit#slide=id.g14d5c27d989_3_0)
 
-test
+[Tableau Story](https://public.tableau.com/views/VehicleInsuranceFraudStory/Story1?:language=en-US&:display_count=n&:origin=viz_share_link)
